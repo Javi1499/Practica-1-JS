@@ -1,0 +1,112 @@
+/*==================== Variables ====================*/
+:root{
+    --Claro : #CCCCCC;
+    --Obscuro: #303030;
+    
+    --Primario1 : #31B189;
+    --Primario2 : #7ACE67;
+
+    --Secundario1 : #FFC872;
+    --Secundario2 : #FFE3B3; 
+}
+
+/* ==================== Main Containers ==================== */
+.body {
+    font-family: 'Krub', sans-serif;
+    background-color: var(--Secundario2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header {
+    max-width: 480px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+
+
+/* ==================== Titles ==================== */
+.title {
+    color: var(--Obscuro);
+    margin: auto 20px;
+}
+
+.title__span {
+    font-size: 20px;
+}
+
+
+
+/* ==================== Sec Containers ==================== */
+.container {
+
+    max-width: 400px;
+    height: auto;
+    background-color: var(--Secundario1);
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* ==================== Icons ==================== */
+
+.header__icon {
+    background-color: var(--Primario1);
+    border-radius: 10px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==================== Spacer ==================== */
+
+.spacer {
+    background-color: #7ACE67;
+    width: 100%;
+    height: 10px;
+
+    margin: 20px 0px; 
+}
+
+/* ==================== Button ==================== */
+
+.button {
+    min-width: 150px;
+    padding: 10px;
+    font-family: 'Krub';
+    font-weight: bold;
+    background-color: var(--Primario1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--Primario2);
+}
+
+/* ==================== Input ==================== */
+
+.input-largo {
+    width: 80%;
+    min-width: 170px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.input-corto {
+    min-width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}

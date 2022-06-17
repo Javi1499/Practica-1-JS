@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1 JS</title>
+
+    <!-- ==================== Script ====================-->
+    <script src="PracticaJS1.js"></script>
+
+    <!-- ==================== Fonts ====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- ==================== Style Sheet ====================-->
+    <link rel="stylesheet" href="PracticaJS1.css">
+</head>
+<body class="body">
+
+    <header class="header">
+
+        <div class="header__icon">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-laptop" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#303030" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="3" y1="19" x2="21" y2="19" />
+                <rect x="5" y="6" width="14" height="10" rx="1" />
+            </svg>
+
+        </div>
+
+        <h1 class="title">Javier Trujillo <span class="title__span">Trainee</span></h1>
+
+    </header>
+    
+    <!-- ==================== Spacer ==================== -->
+    <div class="spacer"></div>
+
+    <!-- ==================== Main ==================== -->
+    <main class="main">
+        <!-- ==================== Ejercicio 1 ==================== -->
+        <div class="container" id="id-container1">
+            <h3 class="title container__title">
+                Ejercicio 1.
+            </h3>
+            <p>1- Escribir una función en javascript que regrese el día actual y la hora</p>
+
+            <input class="button" type="button" value="¿Qué hora/día es?" onclick="Ejercicio1(new Date)">
+        </div>
+
+        <!-- ==================== Ejercicio 2 ==================== -->
+        <div class="container" id="id-container2">
+            <h3 class="title container__title">
+                Ejercicio 2.
+            </h3>
+            <p>2- Escribir una función en javascript para saber si un palabra existe dentro de una cadena de texto.</p>
+
+            <label>Cadena
+                <input type="text" class="input-largo" id="id-input1">
+            </label><br>
+            <label>Palabra
+                <input type="text" class="input-corto" id="id-input2">
+            </label><br>
+
+            <input class="button" type="button" value="Buscar" onclick="Ejercicio2()">
+        </div>
+
+        <!-- ==================== Ejercicio 3 ==================== -->
+        <div class="container" id="id-container3">
+            <h3 class="title container__title">
+                Ejercicio 3.
+            </h3>
+            <p>3- Escribir una función en javascript que reciba 2 parámetros int y que los sume, sí ambos números son iguales los multiplicará por 4</p>
+            <label>Primer Número
+                <input type="number" class="input-corto" id="id-input3">
+            </label><br>
+            <label>Segundo Número
+                <input type="number" class="input-corto" id="id-input4">
+            </label><br>
+
+            <input class="button" type="button" value="Calcular" onclick="Ejercicio3()">
+        </div>
+
+        <!-- ==================== Ejercicio 4 ==================== -->
+        <div class="container" id="id-container4">
+            <h3 class="title container__title">
+                Ejercicio 4.
+            </h3>
+            <p>4- Escribir una función en javascript que reciba una cadena, agregando al inicio la palabra “Volcancode” si la cadena ya tiene ese texto entonces regresa la cadena original.</p>
+            <label>Cadena
+                <input type="text" class="input-largo" id="id-input5">
+            </label><br>
+
+            <input class="button" type="button" value="Revisar" onclick="Ejercicio4()">
+        </div>
+
+        <!-- ==================== Ejercicio 5 ==================== -->
+        <div class="container" id="id-container5">
+            <h3 class="title container__title">
+                Ejercicio 5.
+            </h3>
+            <p>5- Escribir una función en javascript que reciba 3 números enteros, negativos o positivos, y regrese el numero mas alto.</p>
+            <label>Primer Número
+                <input type="number" class="input-corto" id="id-input6">
+            </label><br>
+            <label>Segundo Número
+                <input type="number" class="input-corto" id="id-input7">
+            </label><br>
+            <label>Tercer Número
+                <input type="number" class="input-corto" id="id-input8">
+            </label><br>
+
+            <input class="button" type="button" value="Calcular" onclick="Ejercicio5()">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Realizado el 13/06/22</p>
+    </footer>
+</body>
+</html>
