@@ -86,15 +86,15 @@ function Ejercicio4(){
     /* console.log('interno '+BuscarPalabra); Solo para ver valor de la variable*/ 
 
     if (BuscarPalabraU){
-        CadenaResultado = Cadena;
+        CadenaResultado = Cadena.replace('Volcancode','');
     }else {
         if (BuscarPalabraL){
-            CadenaResultado = Cadena.replace('volcancode','Volcancode');
+            CadenaResultado = Cadena.replace('volcancode','');
         }else {
             CadenaResultado = 'Volcancode '+ Cadena;
         }
     }    
-
+    console.log('test '+ CadenaResultado);
     let contenedor = document.getElementById('id-container4');
     let parrafo = document.createElement('p');
     parrafo.innerHTML = CadenaResultado;
